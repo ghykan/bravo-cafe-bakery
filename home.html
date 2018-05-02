@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link href="css/home.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".cart").mouseenter(function(){
+                $(".window").css("opacity", "1");
+            });
+            $(".cart").mouseleave(function(){
+                $(".window").css("opacity", "0");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <nav class="wave">
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" width="90" height="75" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="opt"><a href="cake.html">CAKE</a></li>
+            <li class="opt"><a href="dish.html">DISH</a></li>
+            <li class="opt"><a href="contact.html">CONTACT</a></li>
+            <li class="opt"><a href="about.html">ABOUT US</a></li>
+            <div class="cart">
+                <a href="checkout.html" >
+                    <img src="img/cart.1.png" alt="cart">
+                </a>
+            </div>
+            <div class="clearfloat"></div>
+        </ul>
+    </nav>
+    <div class="window">
+        <p class="empty">You Cart is Empty</p>
+    </div>
+    <div class="welcome">
+        <p class="welcometext">Welcome</p>
+        <!--<div class="border">-->
+
+        <!--</div>-->
+        <p class="missionstatement">
+            ~ Our cakes are different from ordinary cakes in that we emphasize "freshness", "healthiness", and
+            "deliciousness". The great taste, reduced sugar and fat, and no preservatives assures your peace of mind
+            while you enjoy your dessert ~ </p>
+    </div>
+
+    <div class="slideshow-container"><!--beginning of slideshow container -->
+        <!--<div id="slideshow">-->
+            <!--<div><a href="#"><img src="img/pineapple%20cake.png" height="300" width="400" alt="pineaple-cake"></a></div>-->
+            <!--<div><a href="#"><img src="img/cream-puffs.png" height="300" width="400" alt="cream-puff"></a></div>-->
+        <!--</div>-->
+        <div class="mySlides fade">
+            <img src="img/creampuff.jpg" width="500px" height="250px" class="img">
+        </div>
+
+        <div class="mySlides fade">
+            <img src="img/Pineapple_cake.jpg" width="500px" height="250px" class="img">
+        </div>
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <!--<span class="dot"></span>-->
+        </div>
+    </div><!--end of slideshow container -->
+
+    <div class="information">
+        <p class="address">
+                            1106 Grant Ave. St Paul. MN. 55105</br>
+                           Tel: 651-287-9118
+        </p>
+        <p class="hour">Monday - Thursday</br>
+                        10:00am - 8:30pm</br>
+                        Friday - Saturday</br>
+                        10:00am - 9:00pm</br>
+                        Sunday</br>
+                        Closed</br>
+        </p>
+    </div>
+    <div class="clearfloat"></div>
+    <footer>
+        <div class="icon">
+            <a href="https://www.facebook.com/Bravo-Bakery-115825201771709/" target="_blank">
+            <img src="img/facebook-icon.1.png"  height="45" width="45" alt="facebook">
+            </a>
+        </div>
+        <div class="icon2">
+            <a href="https://www.yelp.com/biz/bravo-caf%C3%A9-and-bakery-saint-paul-2" target="_blank">
+            <img src="img/images.png" height="45" width="45" alt="Yelp">
+            </a>
+        </div>
+        <div class="copyright">
+            <p class="rights"><B>Copyright &copy; 2018. All Rights Reserved</B></p>
+        </div>
+    </footer>
+
+</div><!-- end of container-->
+<!--<script>-->
+<!--// var cur = 0,-->
+<!--// pau = 2000,-->
+<!--// fad = 500,-->
+<!--// $ga = $('#slideshow'),-->
+<!--// $sl = $('> div', $ga),-->
+<!--// tot = $sl.length,-->
+<!--// itv ;-->
+<!--//-->
+<!--// $sl.hide().eq( cur ).show();-->
+<!--//-->
+<!--// function stopFn() { clearInterval(itv); }-->
+<!--// function loopFn() { itv = setInterval(fadeFn, pau); }-->
+<!--// function fadeFn() { $sl.fadeOut(fad).eq(++cur%tot).stop().fadeIn(fad); }-->
+<!--// $ga.hover( stopFn, loopFn );-->
+<!--//-->
+<!--// loopFn();-->
+<!--</script>-->
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+</script>
+</body>
+</html>

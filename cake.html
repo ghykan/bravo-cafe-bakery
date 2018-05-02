@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake</title>
+    <link href="css/cake.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".cart").mouseenter(function () {
+                $(".window").css("opacity", "1");
+            });
+            $(".cart").mouseleave(function () {
+                $(".window").css("opacity", "0");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <nav class="wave">
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" width="90" height="75" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="opt"><a href="cake.html">CAKE</a></li>
+            <li class="opt"><a href="dish.html">DISH</a></li>
+            <li class="opt"><a href="contact.html">CONTACT</a></li>
+            <li class="opt"><a href="about.html">ABOUT US</a></li>
+            <div class="cart">
+                <a href="checkout.html">
+                    <img src="img/cart.1.png" alt="cart">
+                </a>
+            </div>
+            <div class="clearfloat"></div>
+        </ul>
+    </nav>
+    <div class="window">
+        <p class="empty">You Cart is Empty</p>
+    </div>
+    <div class="titlecontainer">
+        <div class="cake">Cake</div>
+    </div>
+    <div class="informationbox">
+
+        <div class="all">
+            <p class="section">All Occasions</p>
+            <p class="price">Type:
+                <select id="cake" onchange="ChangeCakeList(); ChangeSizeList()">
+                    <option vaule="">-- type--</option>
+                    <option value="bd" >Birthday</option>
+                    <option value="gd">Graduation</option>
+                    <option value="kid">Kid</option>
+                    <option value="baby">Baby Shower</option>
+                    <option value="all">All Occasion</option>
+                    <option value="ne">Eggless</option>
+                    <option value="ch">Cheese</option>
+                </select>
+                <select id="flavor"></select>
+                <select id="size"></select>
+
+        </p>
+            <p class="price">Decoration:
+                <select>
+                    <option value="birthsign">Happy Birthday Sign</option>
+                    <option value="graduation cap">Graduation Cap(+$3)</option>
+                    <option value="balloon">Balloon(+$2)</option>
+                    <option value="both">Graduation Cap & Balloon (+$5)</option>
+                    <option value="none">None</option>
+                </select>
+            </p>
+            <div id="popout" class="type">Model</div>
+            <div id="pop" class="modal">
+            <div class="modal-container">
+                <span class="close">&times;</span>
+                <div class="imgelist">
+                <div class="img1"><img src="img/B-1.jpg">
+                    <a href="cake.html"><p class="select" >Select</p></a>
+                </div>
+                <div class="img1"><img src="img/B-2.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/B-4.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/B-5.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/B-6.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+
+                <div class="img1"><img src="img/B-9.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/B-11.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/B-14.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/BS-2.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/BS-4.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/K-1.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                <div class="img1"><img src="img/K-5.jpg">
+                    <a href="cake.html"><p class="select">Select</p></a>
+                </div>
+                </div>
+                <p id="modeltype"></p>
+            </div>
+
+            </div>
+            </p>
+            <table class="time">
+                <tr>
+                    <td><label for="date"> Pick Up Date:</label></td>
+                    <td><input type="date" value="2018-04-18"></td>
+                </tr>
+            </table>
+            <div class="message">
+                Message to baker
+                <textarea cols="40" rows="7">
+            </textarea>
+            </div>
+            <br>
+
+
+            <div class="check"><a href="checkout.html" >Check Out</a></div>
+            <br>
+            <div class="tip">* Different flavors have different prices</div>
+
+        </div>
+
+        <div class="cakeprice">
+            <br>
+            <table>
+                <tr class="thinfor">
+                    <th>Size</th>
+                    <th>Order 48 hrs advanced</th>
+                    <th>Order within 48 hrs advanced</th>
+                </tr>
+                <tr class="thinfor">
+                    <td>8" (serve 8-12) </td>
+                    <td>$22</td>
+                    <td>$24</td>
+                </tr>
+                <tr class="thinfor">
+                    <td>10" (serve 12-20) </td>
+                    <td>$35</td>
+                    <td>$38</td>
+                </tr>
+                <tr class="thinfor">
+                    <td>12" (serve 20-30) </td>
+                    <td>$52</td>
+                    <td>$56</td>
+                </tr>
+                <tr class="thinfor">
+                    <td>14" (serve 30-46) </td>
+                    <td>$70</td>
+                    <td>$75</td>
+                </tr>
+                <tr class="thinfor">
+                    <td>1/4 sheet (serve 12-24) </td>
+                    <td>$35</td>
+                    <td>$38</td>
+                </tr>
+                <tr class="thinfor">
+                    <td>1/2 sheet (serve 24-48) </td>
+                    <td>$70</td>
+                    <td>$75</td>
+                </tr>
+                <tr class="thinfor">
+                    <td>full sheet (serve 48-96) </td>
+                    <td>$130</td>
+                    <td>$140</td>
+                </tr>
+            </table>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="call">Please Call: 651-287-9118 to make an appointment/information for WEDDING CAKE </div>
+        </div>
+        <div class="cakepicture">
+                <img src="img/photo-1504114133367-631ecd3db3ca.jpg" width="355" height="475" alt="cake">
+        </div>
+    </div>
+    <div class="clearfloat"></div>
+    <footer>
+        <div class="icon">
+            <a href="https://www.facebook.com/Bravo-Bakery-115825201771709/" target="_blank">
+                <img src="img/facebook-icon.1.png" height="45" width="45" alt="facebook">
+            </a>
+        </div>
+        <div class="icon2">
+            <a href="https://www.yelp.com/biz/bravo-caf%C3%A9-and-bakery-saint-paul-2" target="_blank">
+                <img src="img/images.png" height="45" width="45" alt="Yelp">
+            </a>
+        </div>
+        <div class="copyright">
+            <p class="rights">
+                1106 Grant Ave. St Paul. MN. 55105<br>
+            Mon-Thur: 10:00am - 8:30pm / Fri-Sat: 10:00am - 9:00pm<br>
+            Sun: CLOSE<br>
+            <b> Copyright &copy; 2018. All Rights Reserved</b></p>
+        </div>
+    </footer>
+
+    <script>
+        var modal = document.getElementById('pop');
+        var btn = document.getElementById("popout");
+        var span = document.getElementsByClassName("close")[0];
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        var cakeflavor = {};
+        cakeflavor['bd'] = ['Chocolate', 'Durian', 'Green Tea', 'Kiwi', 'Mango', 'Mocha', 'Peach', 'Pineapple', 'Strawberry', 'Taro', 'Vanilla'];
+        cakeflavor['gd'] = ['Chocolate', 'Durian', 'Green Tea', 'Kiwi', 'Mango', 'Mocha', 'Peach', 'Pineapple', 'Strawberry', 'Taro', 'Vanilla'];
+        cakeflavor['kid'] = ['Chocolate', 'Durian', 'Green Tea', 'Kiwi', 'Mango', 'Mocha', 'Peach', 'Pineapple', 'Strawberry', 'Taro', 'Vanilla'];
+        cakeflavor['baby'] = ['Chocolate', 'Durian', 'Green Tea', 'Kiwi', 'Mango', 'Mocha', 'Peach', 'Pineapple', 'Strawberry', 'Taro', 'Vanilla'];
+        cakeflavor['all'] = ['Chocolate', 'Durian', 'Green Tea', 'Kiwi', 'Mango', 'Mocha', 'Peach', 'Pineapple', 'Strawberry', 'Taro', 'Vanilla'];
+        cakeflavor['ne'] = ['Honey', 'Marble'];
+        cakeflavor['ch'] = ['Cheese'];
+
+        function ChangeCakeList() {
+            var cakeList = document.getElementById("cake");
+            var modelList = document.getElementById("flavor");
+            var seltype = cakeList.options[cakeList.selectedIndex].value;
+            while (modelList.options.length) {
+                modelList.remove(0);
+            }
+            var cakes = cakeflavor[seltype];
+            if (cakes) {
+                var i;
+                for (i = 0; i < cakes.length; i++) {
+                    var cake = new Option(cakes[i], i);
+                    modelList.options.add(cake);
+                }
+            }
+        }
+        var cakefsize = {};
+        cakefsize['bd'] = ['8"', '10"', '12"', '14"', '1/4 sheet', '1/2 sheet', 'Full Sheet'];
+        cakefsize['gd'] = ['8"', '10"', '12"', '14"', '1/4 sheet', '1/2 sheet', 'Full Sheet'];
+        cakefsize['kid'] = ['8"', '10"', '12"', '14"', '1/4 sheet', '1/2 sheet', 'Full Sheet'];
+        cakefsize['baby'] = ['8"', '10"', '12"', '14"', '1/4 sheet', '1/2 sheet', 'Full Sheet'];
+        cakefsize['all'] = ['8"', '10"', '12"', '14"', '1/4 sheet', '1/2 sheet', 'Full Sheet'];
+        cakefsize['ne'] = [ 'Single', 'Double', '1/2 sheet', 'Full Sheet'];
+        cakefsize['ch'] = ['8"', '10"'];
+
+        function ChangeSizeList() {
+            var cakeList = document.getElementById("cake");
+            var modelList = document.getElementById("size");
+            var seltype = cakeList.options[cakeList.selectedIndex].value;
+            while (modelList.options.length) {
+                modelList.remove(0);
+            }
+            var cakes = cakefsize[seltype];
+            if (cakes) {
+                var i;
+                for (i = 0; i < cakes.length; i++) {
+                    var cake = new Option(cakes[i], i);
+                    modelList.options.add(cake);
+                }
+            }
+        }
+
+        <!--calculation for cake-->
+
+
+
+
+    </script>
+
+</body>
+</html>

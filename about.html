@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link href="css/about.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".cart").mouseenter(function () {
+                $(".window").css("opacity", "1");
+            });
+            $(".cart").mouseleave(function () {
+                $(".window").css("opacity", "0");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <nav class="wave">
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" width="90" height="75" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="opt"><a href="cake.html">CAKE</a></li>
+            <li class="opt"><a href="dish.html">DISH</a></li>
+            <li class="opt"><a href="contact.html">CONTACT</a></li>
+            <li class="opt"><a href="about.html">ABOUT US</a></li>
+            <div class="cart">
+                <a href="checkout.html">
+                    <img src="img/cart.1.png" alt="cart">
+                </a>
+            </div>
+            <div class="clearfloat"></div>
+        </ul>
+    </nav>
+    <div class="window">
+        <p class="empty">You Cart is Empty</p>
+    </div>
+    <div class="titlecontainer">
+        <div class="about">About Us</div>
+    </div>
+    <div class="informationbox">
+        <p class="aboutus">Bravo Bakery was founded in St. Paul in 2005 by Mrs. Tina Lin and is located on Grand Avenue & Lexington
+            Avenue.<br>
+            <br>
+            Tina started her food retail experience in the mid-80s in a Chinese restaurant as a waitress. By early 90s,
+            she co-owned a successfully Chinese take-out restaurant in the heart of New York City, Manhattan serving
+            hundreds of customers each day. She brings with her 20 years of food retail experience to Bravo! Bakery.<br>
+            <br>
+            The bakery is well known for its signature products –Cream Puff and Mango Cakes. It is a full service bakery
+            offering a wide selection of baked goods including anniversary cakes, wedding cakes, cream puff, sponge
+            cheese cake, mango cake, and some dairy free products.<br>
+            <br>
+            The bakery offers a wide variety of fresh cream cake flavors and sizes for different occasions, baked fresh
+            to order. Cream is made from scratch using real whip cream. Flavor choices include vanilla, chocolate,
+            strawberry, mango, pineapple, green tea, kiwi, peach and Mocha</p>
+    </div>
+    <div class="picture">
+        <div class="img">
+        <img src="img/bravo.png" class="img">
+        <img src="img/store1.jpg" class="img" height="200" width="300">
+        </div>
+    </div>
+    <div class="clearfloat"></div>
+    <footer>
+        <div class="icon">
+            <a href="https://www.facebook.com/Bravo-Bakery-115825201771709/" target="_blank">
+                <img src="img/facebook-icon.1.png" height="45" width="45" alt="facebook">
+            </a>
+        </div>
+        <div class="icon2">
+            <a href="https://www.yelp.com/biz/bravo-caf%C3%A9-and-bakery-saint-paul-2" target="_blank">
+                <img src="img/images.png" height="45" width="45" alt="Yelp">
+            </a>
+        </div>
+
+        <div class="copyright">
+            <p class="rights">
+                1106 Grant Ave. St Paul. MN. 55105<br>
+                Mon-Thur: 10:00am - 8:30pm / Fri-Sat: 10:00am - 9:00pm<br>
+                                Sun: CLOSE<br>
+                <b> Copyright &copy; 2018. All Rights Reserved</b></p>
+        </div>
+    </footer>
+</body>
+</html>

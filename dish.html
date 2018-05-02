@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dish</title>
+    <link href="css/dish.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".cart").mouseenter(function () {
+                $(".window").css("opacity", "1");
+            });
+            $(".cart").mouseleave(function () {
+                $(".window").css("opacity", "0");
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="container">
+    <nav class="wave">
+        <div class="logo">
+            <a href="home.html"><img src="img/logo.png" width="90" height="75" alt="logo"></a>
+        </div>
+        <ul>
+            <li class="opt"><a href="cake.html">CAKE</a></li>
+            <li class="opt"><a href="dish.html">DISH</a></li>
+            <li class="opt"><a href="contact.html">CONTACT</a></li>
+            <li class="opt"><a href="about.html">ABOUT US</a></li>
+            <div class="cart">
+                <a href="checkout.html">
+                    <img src="img/cart.1.png" alt="cart">
+                </a>
+            </div>
+            <div class="clearfloat"></div>
+        </ul>
+    </nav>
+    <div class="window">
+        <p class="empty">You Cart is Empty</p>
+    </div>
+    <div class="titlecontainer">
+        <div class="dish">Dish</div>
+    </div>
+    <div class="informationbox">
+            <div class="drink">
+                <h3 class="beverage">Beverage</h3>
+                <table>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td scope="col" class="drinksize">12oz</td>
+                        <td scope="col" class="drinksize">16oz</td>
+                        <td scope="col" class="drinksize">20oz</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="kind">HOT</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Chai Tea</td>
+                        <td ></td>
+                        <td>$2.80</td>
+                        <td>$3.10</td>
+                        <td>$3.35</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Green Tea Latte</td>
+                        <td ></td>
+                        <td>$2.90</td>
+                        <td>$3.50</td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Tea</td>
+                        <td ></td>
+                        <td>$1.50</td>
+                        <td>$1.75</td>
+                        <td>$2.00</td>
+                    </tr>
+                    <tr>
+                        <td>Hot Chocolate</td>
+                        <td ></td>
+                        <td>$2.20</td>
+                        <td>$2.50</td>
+                        <td>$2.80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="kind">ESPRESSO CREATIONS(available for cold)</td>
+                    </tr>
+                    <tr>
+                        <td>Americano</td>
+                        <td ></td>
+                        <td>$1.85</td>
+                        <td>$2.10</td>
+                        <td>$2.50</td>
+                    </tr>
+                    <tr>
+                        <td>Café Latte</td>
+                        <td ></td>
+                        <td>$2.50</td>
+                        <td>$3.10</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Café Mocha</td>
+                        <td ></td>
+                        <td>$2.80</td>
+                        <td>$3.40</td>
+                        <td>$3.60</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino </td>
+                        <td ></td>
+                        <td>$2.50</td>
+                        <td>$3.10</td>
+                        <td>$3.50</td>
+                    </tr>
+                    <tr>
+                        <td>Coffee of the Day</td>
+                        <td ></td>
+                        <td>$1.45</td>
+                        <td>$1.65</td>
+                        <td>$1.75</td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Mocha</td>
+                        <td ></td>
+                        <td>$2.90</td>
+                        <td>$3.50</td>
+                        <td>$3.70</td>
+                    </tr>
+                    <tr>
+                        <td>Espresso </td>
+                        <td ></td>
+                        <td>$1.45</td>
+                        <td>$1.70</td>
+                        <td>$1.90</td>
+                    </tr>
+                    <tr>
+                        <td>Steamer  </td>
+                        <td ></td>
+                        <td>$2.20</td>
+                        <td>$2.50</td>
+                        <td>$2.80</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"></td>
+                        <td scope="col" class="drinksize">16oz</td>
+                        <td></td>
+                        <td scope="col" class="drinksize">20oz</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="kind">BLENDED COFFEE</td>
+                    </tr>
+                    <tr>
+                        <td>Caramel Mocha Glacier</td>
+                        <td ></td>
+                        <td>$3.50</td>
+                        <td></td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Cappuccino Glacier</td>
+                        <td ></td>
+                        <td>$3.50</td>
+                        <td></td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Frosted Latte Glacier </td>
+                        <td ></td>
+                        <td>$3.50</td>
+                        <td></td>
+                        <td>$3.75</td>
+                    </tr>
+                    <tr>
+                        <td>Mocha Glacier </td>
+                        <td ></td>
+                        <td>$3.50</td>
+                        <td></td>
+                        <td>$3.75</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="drink2">
+                <table>
+                <tr>
+                    <td colspan="2"></td>
+                    <td scope="col" class="drinksize">16oz</td>
+                    <td scope="col" class="drinksize">20oz</td>
+                </tr>
+                    <tr>
+                        <td colspan="4" class="kind">COLD</td>
+                    </tr>
+                <tr>
+                    <td>Iced Chai Tea</td>
+                    <td ></td>
+                    <td>$3.50</td>
+                    <td>$3.75</td>
+                </tr>
+                <tr>
+                    <td>Iced Citron Tea</td>
+                    <td ></td>
+                    <td>$3.50</td>
+                    <td>$3.75</td>
+                </tr>
+                <tr>
+                    <td>Iced Green Tea Latte</td>
+                    <td ></td>
+                    <td>$3.50</td>
+                    <td>$3.75</td>
+                </tr>
+                <tr>
+                    <td>Iced Tea (Green/Black) </td>
+                    <td ></td>
+                    <td>$1..95</td>
+                    <td>$2.15</td>
+                </tr>
+                    <tr>
+                        <td colspan="4" class="kind">BUBBLE TEA / SMOOTHIES ($3.50 / $3.75)</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Almond</td>
+                        <td class="hottea">.Coconut</td>
+                        <td class="hottea">.Coffee</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Green Apple</td>
+                        <td class="hottea">.Green Tea</td>
+                        <td class="hottea">.Kiwi</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Lychee</td>
+                        <td class="hottea">.Mango </td>
+                        <td class="hottea">.Papaya</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Passion Fruit</td>
+                        <td class="hottea">.Peach</td>
+                        <td class="hottea">.Pearl</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Pineapple</td>
+                        <td class="hottea">.Pineapple + Coconut</td>
+                        <td class="hottea">.Rose</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Strawberry</td>
+                        <td class="hottea">.Strawberry Banana</td>
+                        <td class="hottea">.Taro </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="kind">HOT TEA ($3.75 per pot)</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Apricot Supreme</td>
+                        <td class="hottea">.Berry Berry</td>
+                        <td class="hottea">.Cherry Rose</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Cranberry Apple</td>
+                        <td class="hottea">.Earl Gray</td>
+                        <td class="hottea">.Green Tea</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Jasmine Balls</td>
+                        <td class="hottea">.Jasmine Green Decaf</td>
+                        <td class="hottea">.Ocean Breeze</td>
+                    </tr>
+                    <tr>
+                        <td class="hottea">.Organic Lavender</td>
+                        <td class="hottea">.Orient Express</td>
+                        <td class="hottea">.Rose Buds</td>
+                    </tr>
+
+                </table>
+            </div>
+            <div class="hotdish">
+            <h3 class="dishcontainer">Dish ( $6.50 with white/ brown rice)</h3>
+                <div class="plate">
+                <p>Beef or Chicken w/Broccoli</p>
+                    <br>
+                <p>Spare Ribs or Fish w/Broccoli </p>
+                    <br>
+                <p>Beef or Chicken w/Mushroom</p>
+                    <br>
+                <p>Spare Ribs or Fish w/Mushroom </p>
+                    <br>
+                    <p>Orange Beef (non-vegan)<img src="img/spicy.png" width="10" height="10" alt="spicy"></p>
+                    <br>
+                <p>Orange Chicken or Tofu or Spare Ribs or Fish <img src="img/spicy.png" width="10" height="10" alt="spicy"></p>
+                    <br>
+                <p>Sesame Beef (non-vegan)</p>
+                    <br>
+                <p>Sesame Chicken or Tofu or Spare Ribs or Fish </p>
+                    <br>
+                <p>Pepper Steak</p>
+                    <br>
+                <p>Kung Pao Chicken or Beef or Tofu<img src="img/spicy.png" width="10" height="10" alt="spicy"></p>
+                    <br>
+                <p>Kung Pao Spare Ribs or Fish<img src="img/spicy.png" width="10" height="10" alt="spicy"></p>
+                    <br>
+                 <p class="dishinfor"> * All dishes are made with soy bean or wheat gluten</p>
+                 <p class="dishinfor">* Some of our dishes and sauces contain peanut</p>
+                 <p class="dishinfor">* Non-Vegan means the dish contains egg or dairy</p>
+                </div>
+                <div class="plate2">
+                <p>Pork w/Peking Sauce </p>
+                    <br>
+                <p>Fried Pork Chop </p>
+                    <br>
+                <p>Sweet & Sour Chicken or Tofu</p>
+                    <br>
+                <p>Sweet & Sour Spare Ribs or Fish </p>
+                    <br>
+                <p>Fried Tofu w/Brown Sauce</p>
+                    <br>
+                <p>Tofu Sautéed w/Szechuan Sauce<img src="img/spicy.png" width="10" height="10" alt="spicy"></p>
+                    <br>
+                <p>Mix Vegetable w/Brown Sauce or Steamed</p>
+                    <br>
+                <p>Green Beans w/ Beef or Chicken or Tofu</p>
+                    <br>
+                <p>Green Beans w/ Spare Ribs or Fish </p>
+                    <br>
+                <p>Asparagus w/ Beef or Chicken or Tofu</p>
+                    <br>
+                <p>Asparagus w/ Spare Ribs or Fish </p>
+                    <br>
+                <p>Vegetable Fried Dumpling</p>
+                </div>
+            </div>
+    </div>
+    <div class="clearfloat"></div>
+    <footer>
+        <div class="icon">
+            <a href="https://www.facebook.com/Bravo-Bakery-115825201771709/" target="_blank">
+                <img src="img/facebook-icon.1.png" height="45" width="45" alt="facebook">
+            </a>
+        </div>
+        <div class="icon2">
+            <a href="https://www.yelp.com/biz/bravo-caf%C3%A9-and-bakery-saint-paul-2" target="_blank">
+                <img src="img/images.png" height="45" width="45" alt="Yelp">
+            </a>
+        </div>
+        <div class="copyright">
+            <p class="rights">
+                1106 Grant Ave. St Paul. MN. 55105<br>
+            Mon-Thur: 10:00am - 8:30pm / Fri-Sat: 10:00am - 9:00pm<br>
+            Sun: CLOSE<br>
+            <b> Copyright &copy; 2018. All Rights Reserved</b></p>
+        </div>
+    </footer>
+</body>
+</html>
